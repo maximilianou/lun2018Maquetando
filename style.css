@@ -5,10 +5,13 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: large;
+  color: darkslategray;
 }
 
+
 .wrapper {
-  background-color: yellow;
+  background-color: darkslategray;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-gap: 10px;
@@ -16,7 +19,7 @@
 }
 
 header, footer{
-  background-color: red;
+  background-color: orange;
   grid-column: 1 / -1;
 }
 
@@ -35,10 +38,10 @@ section{
   
 }
 article{
-  background-color: darkred;
+  background-color: yellow;
 }
 aside{
-  background-color: darkgreen;
+  background-color: yellowgreen;
 }
 
 .otragrilla{
@@ -46,13 +49,15 @@ aside{
   grid-template-columns: repeat(1, 100%);
 }
 section h2{
+  text-align: center;
+/*  text-shadow: 2px 2px white; */
   grid-column: 1 / -1;
 }
 
 @media screen and (min-width:800px) {
   .otragrilla {
     grid-template-columns: repeat(2, 50%);
-    grid-gap: 2px;
+    /* grid-column-gap: 2px; */
   }
   
 }
