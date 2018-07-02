@@ -14,7 +14,7 @@ h1 {
 .wrapper {
   background-color: yellow;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 25%);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -34,6 +34,9 @@ nav{
 
 section{
   background-color: darkorange;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
 }
 article{
   background-color: darkred;
@@ -42,11 +45,23 @@ aside{
   background-color: darkgreen;
 }
 
+.otragrilla{
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+section h2{
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width:800px) {
+  .otragrilla {
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 2px;
+  }
+  
+}
+
 @media screen and (min-width:600px) {
-  nav {
-  }
-  section {
-  }
 }
 @media screen and (max-width:599px) {
   .wrapper {
