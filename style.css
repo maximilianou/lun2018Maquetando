@@ -9,3 +9,17 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+
+header{
+  background-color: aqua;
+}
+nav{
+  background-color: blue;
+}
+section{
+  background-color: red;
+}
+footer{
+  background-color: black;
+  color: white;
+}
