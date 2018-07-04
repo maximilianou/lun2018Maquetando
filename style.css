@@ -1,78 +1,11 @@
 /* CSS files add styling rules to your content */
 
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: large;
-  color: darkslategray;
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
 }
 
-
-.wrapper {
-  background-color: darkslategray;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+h1 {
+  font-style: italic;
+  color: #373fff;
 }
-
-header, footer{
-  background-color: orange;
-  grid-column: 1 / -1;
-}
-
-nav{
-  background-color: orange;
-  grid-column: 1;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  
-}
-
-section{
-  background-color: darkorange;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  
-}
-article{
-  background-color: yellow;
-}
-aside{
-  background-color: yellowgreen;
-}
-
-.otragrilla{
-  display: grid;
-  grid-template-columns: repeat(1, 100%);
-}
-section h2{
-  text-align: center;
-/*  text-shadow: 2px 2px white; */
-  grid-column: 1 / -1;
-}
-
-@media screen and (min-width:800px) {
-  .otragrilla {
-    grid-template-columns: repeat(2, 50%);
-    /* grid-column-gap: 2px; */
-  }
-  
-}
-
-@media screen and (min-width:600px) {
-  
-}
-
-@media screen and (max-width:599px) {
-  .wrapper {
-     grid-template-columns: repeat(1, 100%);
-  }
-  nav, section{
-  grid-column: 1 / 1;
-    
-  }
-}
-
