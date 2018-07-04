@@ -1,11 +1,43 @@
-/* CSS files add styling rules to your content */
-
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+* {
+  margin:  0;
+  padding: 0;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+body{
+  background-color: teal;
+  
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  
 }
+
+header {
+  background-color: DarkOliveGreen;
+  grid-column: 1 / -1;
+}
+
+footer {
+  background-color: DarkOliveGreen;
+  grid-column: 1 / -1;
+}
+
+nav{
+  background-color: yellowgreen;
+}
+
+section{
+  background-color: palegreen;
+  grid-column: 2 / -1;
+}
+
+article{
+  background-color: lime;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+
