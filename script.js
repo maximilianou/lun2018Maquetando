@@ -1,5 +1,7 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-// prints "hi" in the browser's dev tools console
-console.log('hi');
+class Nota{
+  
+  static agregar(notita){
+    this._db.push();
+  }
+  
+}

@@ -1,49 +1,87 @@
+/* CSS files add styling rules to your content */
+
+
 * {
-  margin:  0;
+  margin: 0;
   padding: 0;
+  border: 0;
+  font-size: large;
+  color: darkslategray;
 }
 
-body{
-  background-color: teal;
-  
+
+.wrapper {
+  background-color: darkslategray;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  
 }
 
-header {
-  background-color: DarkOliveGreen;
-  grid-column: 1 / -1;
-}
-
-footer {
-  background-color: DarkOliveGreen;
+header, footer{
+  background-color: orange;
   grid-column: 1 / -1;
 }
 
 nav{
-  background-color: yellowgreen;
+  background-color: orange;
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  
 }
 
 section{
-  background-color: palegreen;
-  grid-column: 2 / -1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  background-color: darkorange;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
 }
-
 article{
-  background-color: lime;
-  border-radius: 10px;
-  padding: 10px;
+  background-color: yellow;
+}
+aside{
+  background-color: yellowgreen;
 }
 
-section > h2 {
+.otragrilla{
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+section h2{
+  text-align: center;
+/*  text-shadow: 2px 2px white; */
   grid-column: 1 / -1;
 }
 
+input[type=text], textarea, button {
+  padding: 3px;
+  margin: 5px;
+}
+input{
+  min-width: 70px;
+}
 
 
+@media screen and (min-width:800px) {
+  .otragrilla {
+    grid-template-columns: repeat(2, 50%);
+    /* grid-column-gap: 2px; */
+  }
+  
+}
+
+@media screen and (min-width:600px) {
+  
+}
+
+@media screen and (max-width:599px) {
+  .wrapper {
+     grid-template-columns: repeat(1, 100%);
+  }
+  nav, section{
+  grid-column: 1 / 1;
+    
+  }
+}
 

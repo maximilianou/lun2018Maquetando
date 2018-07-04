@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  
   <head>
     
-    <title>Hello!</title>
+    <title>Maquetando con Grid, con Maru</title>
     
     <link rel="stylesheet" href="/style.css">
     
@@ -10,45 +12,51 @@
     
   </head>  
   
-  <body>
-
-    <header> 
-      <h1>Venta de Automoviles</h1>
-    </header>
+  <body class="wrapper">
     
+    <header>Maquetando con Grid, si llegamos.</header>
+
     <nav>
       <ul>
-        <li> <a href="">Camionetas</a> </li>
-        <li> <a href="">Autos</a>      </li>
-        <li> <a href=""> Bicicletas</a> </li>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
       </ul>
     </nav>
     
-    <section>
+    <section class="otragrilla">
       
-      <h2>Descripcion de los Vehiculos</h2>
+      <h2>Publicacion de Articulos</h2>
       
       <article>
-        <h3>Citroen C4</h3>
-        Un auto familiar
-
+        
+        <h3>Primer Articulo</h3>
+        
+        Texto Uno
       </article>
       
       <article>
-        <h3>Renault Kangoo</h3>
-        Una camionetita piola para los altos
-      </article>
-
-      <article>
-        <h3>Peugeot 306</h3>
-        Auto para trasnochadores
+        
+        <h3>Segundo ARticulo</h3>
+        
+        Texto Dos
       </article>
       
     </section>
+
+    <aside>
+      <h4>Ingreso de Notas</h4>
+      <input type="text" name="el_titulo" id="el_titulo"/>
+      <textarea id="el_area" rows="5" cols="22"></textarea>
+      <button onclick="Nota.agregar();">Agregar Nota</button>
+    </aside>
+
     
-    <footer> 
-      Esta empresa es muy colaboradora, trabaja con varios partners
-    </footer>
-    
+    <footer>Somos un Equipo Multidisciplinario de Desarrollo de Software.</footer>
   </body>
+
+    
+    
 </html>
+
+
