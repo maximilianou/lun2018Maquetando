@@ -13,7 +13,7 @@
 .wrapper {
   background-color: darkslategray;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -39,6 +39,7 @@ section{
 }
 article{
   background-color: yellow;
+  
 }
 aside{
   background-color: yellowgreen;
@@ -46,7 +47,7 @@ aside{
 
 .otragrilla{
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(4, 1fr);
 }
 section h2{
   text-align: center;
@@ -66,7 +67,7 @@ input{
 
 @media screen and (min-width:800px) {
   .otragrilla {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     /* grid-column-gap: 2px; */
   }
   
@@ -78,7 +79,7 @@ input{
 
 @media screen and (max-width:599px) {
   .wrapper {
-     grid-template-columns: repeat(1, 100%);
+     grid-template-columns: repeat(1, 1fr);
   }
   nav, section{
   grid-column: 1 / 1;

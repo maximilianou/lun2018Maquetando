@@ -12,6 +12,21 @@ class Nota{
     let listaNotas = JSON.parse( inicializoNotas ); 
     listaNotas.push( lanota );
     localStorage.setItem( "notas", JSON.stringify( listaNotas ) );    
+    Nota.mostrar();
   }
+  static mostrar(){
+     let listaNotas = JSON.parse( localStorage.getItem("notas") );
+     let texto = ` ${listaNotas.map( notita => 
+                       `<article>
+                            <h3>${notita.titulo}</h3> 
+                            <p>${notita.contenido}</p>
+                        </article>` 
+                      
+                      ).join('')} 
+                   
+                 `;
+     document.querySelector( '#panelNotas' ).innerHTML = texto;
+  }
+  
   
 }
